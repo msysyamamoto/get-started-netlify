@@ -3,7 +3,7 @@ const handler = async (event) => {
   try {
     const subject = event.queryStringParameters.name || 'World'
     return {
-      statusCode: 200,
+      statusCode: 500,
       body: JSON.stringify({ message: `Hello ${subject}` }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
